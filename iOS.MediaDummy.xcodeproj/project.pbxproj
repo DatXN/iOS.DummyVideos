@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA26EDED1E509FAA00743918 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA26EDEC1E509FAA00743918 /* VideoVC.swift */; };
+		AA26EDEF1E50AA8500743918 /* PartyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA26EDEE1E50AA8500743918 /* PartyCell.swift */; };
+		AA26EDF11E50ABBF00743918 /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA26EDF01E50ABBF00743918 /* PartyRock.swift */; };
 		AA5D11B01E501A6B003984E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D11AF1E501A6B003984E6 /* AppDelegate.swift */; };
-		AA5D11B21E501A6B003984E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D11B11E501A6B003984E6 /* ViewController.swift */; };
+		AA5D11B21E501A6B003984E6 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5D11B11E501A6B003984E6 /* MainVC.swift */; };
 		AA5D11B51E501A6B003984E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5D11B31E501A6B003984E6 /* Main.storyboard */; };
 		AA5D11B71E501A6B003984E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA5D11B61E501A6B003984E6 /* Assets.xcassets */; };
 		AA5D11BA1E501A6B003984E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5D11B81E501A6B003984E6 /* LaunchScreen.storyboard */; };
@@ -34,9 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA26EDEC1E509FAA00743918 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
+		AA26EDEE1E50AA8500743918 /* PartyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyCell.swift; sourceTree = "<group>"; };
+		AA26EDF01E50ABBF00743918 /* PartyRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyRock.swift; sourceTree = "<group>"; };
 		AA5D11AC1E501A6B003984E6 /* iOS.MediaDummy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.MediaDummy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5D11AF1E501A6B003984E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA5D11B11E501A6B003984E6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AA5D11B11E501A6B003984E6 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		AA5D11B41E501A6B003984E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA5D11B61E501A6B003984E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA5D11B91E501A6B003984E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -97,12 +103,15 @@
 		AA5D11AE1E501A6B003984E6 /* iOS.MediaDummy */ = {
 			isa = PBXGroup;
 			children = (
+				AA5D11DD1E501AFA003984E6 /* Model */,
+				AA5D11DE1E501B05003984E6 /* View */,
+				AA5D11DF1E501B09003984E6 /* Controller */,
+				AA5D11E01E501B2E003984E6 /* Resources */,
 				AA5D11AF1E501A6B003984E6 /* AppDelegate.swift */,
-				AA5D11B11E501A6B003984E6 /* ViewController.swift */,
-				AA5D11B31E501A6B003984E6 /* Main.storyboard */,
 				AA5D11B61E501A6B003984E6 /* Assets.xcassets */,
-				AA5D11B81E501A6B003984E6 /* LaunchScreen.storyboard */,
 				AA5D11BB1E501A6B003984E6 /* Info.plist */,
+				AA5D11B81E501A6B003984E6 /* LaunchScreen.storyboard */,
+				AA5D11B31E501A6B003984E6 /* Main.storyboard */,
 			);
 			path = iOS.MediaDummy;
 			sourceTree = "<group>";
@@ -123,6 +132,38 @@
 				AA5D11D11E501A6B003984E6 /* Info.plist */,
 			);
 			path = iOS.MediaDummyUITests;
+			sourceTree = "<group>";
+		};
+		AA5D11DD1E501AFA003984E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AA26EDF01E50ABBF00743918 /* PartyRock.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AA5D11DE1E501B05003984E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA26EDEE1E50AA8500743918 /* PartyCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AA5D11DF1E501B09003984E6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AA5D11B11E501A6B003984E6 /* MainVC.swift */,
+				AA26EDEC1E509FAA00743918 /* VideoVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		AA5D11E01E501B2E003984E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +303,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA5D11B21E501A6B003984E6 /* ViewController.swift in Sources */,
+				AA26EDF11E50ABBF00743918 /* PartyRock.swift in Sources */,
+				AA26EDED1E509FAA00743918 /* VideoVC.swift in Sources */,
+				AA5D11B21E501A6B003984E6 /* MainVC.swift in Sources */,
+				AA26EDEF1E50AA8500743918 /* PartyCell.swift in Sources */,
 				AA5D11B01E501A6B003984E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +560,7 @@
 				AA5D11D61E501A6B003984E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA5D11D71E501A6B003984E6 /* Build configuration list for PBXNativeTarget "iOS.MediaDummyTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +569,7 @@
 				AA5D11D91E501A6B003984E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA5D11DA1E501A6B003984E6 /* Build configuration list for PBXNativeTarget "iOS.MediaDummyUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +578,7 @@
 				AA5D11DC1E501A6B003984E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
